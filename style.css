@@ -10,6 +10,7 @@
 
 body {
   font-family:  'Mulish', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #555755cb;
 }
 
 .site-wrapper {
@@ -40,6 +41,8 @@ body {
   min-width: 300px;
   height: 98vh;
   flex-direction: column;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 5%;
 }
 
 .container {
@@ -48,6 +51,7 @@ body {
   justify-content: center;
   flex: 1;
   width: 100%;
+  height: 33vh;
   background-color: var(--bg-dark);
   gap: 5px;
 }
@@ -70,10 +74,11 @@ body {
 }
 
 .header {
+  border-top-right-radius: 5px;
   background-color: var(--secondary-bg);
   color: var(--header-text);
-  height: 80%;
-  padding-bottom: 0px;
+  height: 33vh;
+
 }
 
 p {
@@ -83,30 +88,46 @@ p {
 .form {
   background-color: var(--tag-bg);
   color: white;
-  height: 120%;
-  display: block;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-text {
   justify-content: center;
   padding: 20px;
   margin: 20px;
+  display: inline-block;
+  gap: 2rem;
+  font-size: 1rem;
 }
 
 .text-wrap {
   justify-content: center;
   padding: 20px;
+  padding-bottom: 0px;
   margin: 20px;
+}
+
+label {
+  text-transform: uppercase;
+  width: 15rem;
+  margin-bottom: 15px;
 }
 
 input {
   border: 2px solid white;
   border-radius: 5px;
+  transition: all .3s;
 }
 
+input:focus {
+  border: 2px solid var(--secondary-bg)
+}
 
 .signup {
-  height: 100%;
+  height: 33vh;
   width: 100%;
   background-color: var(--secondary-bg);
 }
@@ -120,15 +141,21 @@ input {
 .login  {
   color: white;
   font-size: 18px;
+  border-bottom-right-radius: 5px;
 }
 
 a {
   color: var(--tag-bg);
   text-decoration: none;
+  transition: all .1s;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+a:active {
+  font-size: 17px;
 }
 
 .wave {
@@ -167,4 +194,22 @@ a:hover {
 .wave2
  .shape-fill {
   fill: var(--tag-bg);
+}
+
+button {
+  border: 1px solid var(--tag-bg);
+  background-color: var(--secondary-bg);
+  color: var(--tag-bg);
+  transition: all .2s;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: var(--tag-bg);
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #7d5417;
 }
