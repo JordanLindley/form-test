@@ -74,15 +74,16 @@ body {
 }
 
 .header {
+  font-size: 14px;
   border-top-right-radius: 5px;
   background-color: var(--secondary-bg);
   color: var(--header-text);
   height: 33vh;
-
+  line-height: 2rem;
 }
 
 p {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .form {
@@ -91,16 +92,21 @@ p {
   height: 33vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  line-height: 1rem;
 }
 
 .form-text {
+  flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
   padding: 20px;
   margin: 20px;
+  width: 30%;
   display: inline-block;
   gap: 2rem;
   font-size: 1rem;
+  flex-basis: 50%;
+  line-height: 1.5rem;
 }
 
 .text-wrap {
