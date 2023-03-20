@@ -98,10 +98,8 @@ p {
 .form-text {
   flex-wrap: wrap;
   justify-content: center;
-  box-sizing: border-box;
   padding: 20px;
   margin: 20px;
-  width: 30%;
   display: inline-block;
   gap: 2rem;
   font-size: 1rem;
@@ -126,6 +124,7 @@ input {
   border: 2px solid white;
   border-radius: 5px;
   transition: all .3s;
+  box-sizing: border-box;
 }
 
 input:focus {
